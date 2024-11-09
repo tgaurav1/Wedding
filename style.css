@@ -19,6 +19,7 @@
   user-select: none;
   cursor: pointer;
 }
+
 .Picture-video {
   display: inline-block;
   position: absolute;
@@ -32,6 +33,7 @@
   user-select: none;
   cursor: pointer;
 }
+
 .Picture-img {
   display: block;
   width: 500px;
@@ -49,6 +51,7 @@
   font-size: 1.5rem;
   text-align: center;
 }
+
 .Picture-note-video {
   display: flex;
   align-items: center;
@@ -64,6 +67,7 @@
   display: inline-block;
   padding: 0 5px;
 }
+
 .Network-video {
   display: inline-block;
   padding: 0 5px;
@@ -80,9 +84,34 @@
   aspect-ratio: 1 / 1;
   vertical-align: middle;
 }
+
 /* --------------------- */
-/* Other styles          */
+/* Popup styles          */
 /* --------------------- */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
 
 * {
   box-sizing: border-box;
